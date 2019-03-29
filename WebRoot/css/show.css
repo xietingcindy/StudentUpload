@@ -1,0 +1,51 @@
+
+#btgood{
+	color: red;
+	margin-left: 30px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+#hot{
+	font-size: 12px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.table{
+	padding: 20px;
+}
+
+.dropdown-menu{
+	font-size: 16px;
+	text-align: center;
+}
+
+#icon-top{
+	font-size:70px;
+	margin-left: 15%;
+}
+
+.logo{
+	float: left;
+	margin-left:8%;
+}
+
+
+#logo{
+	font-family: "Comic Sans MS";
+	font-size: 30px;
+}
+.bread{
+	margin-left:33%;
+}
+.footer{
+	margin: auto;
+	text-align: center;
+}
+.intro{
+	width:227px;
+	height:58px;
+	display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 3;
+overflow: hidden;
+}

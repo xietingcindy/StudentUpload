@@ -1,0 +1,41 @@
+body {
+	background-image:url(../img/timg1.jpg) ;
+}
+
+#input_name,#inputarea {
+	width: 200%;
+}
+
+#form {
+	padding-top: 20px;
+}
+
+#form-table {
+	padding-left:100px ;
+	margin-right: 300px;
+	float: left;
+}
+
+
+#icon-top {
+	float: left;
+	padding-left:30% ;
+	font-size:70px ;
+	color: white;
+}
+
+#title-p {
+	font-size: 30px;
+	padding-top:20px ;
+}
+
+.layui-nav {
+	height: 70px;
+	opacity: 0.9;
+}
+
+#btn-operation {
+	padding-left: 30%;
+	padding-top: 20px;
+}
+

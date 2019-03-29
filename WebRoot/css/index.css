@@ -1,0 +1,27 @@
+.layui-input {
+	width: 300px;
+}
+
+
+#form {
+	position: absolute;   
+    top: 50%;   
+    left: 70%;   
+    transform: translate(-50%, -50%); 
+}
+
+#img_head {
+	position: absolute;    
+    left: 50%;   
+    transform: translate(0, -120%);
+}
+
+#btn-admin {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+
+.layui-icon {
+	font-size:30px ;
+}

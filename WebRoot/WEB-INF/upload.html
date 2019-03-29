@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>项目上传</title>
+		<link rel="stylesheet" href="layui-v2.4.5/layui/css/layui.css" />
+		<link rel="stylesheet" href="css/upload.css" />
+		<script src="layui-v2.4.5/layui/layui.js"></script>
+		<script src="js/upload.js"></script>
+	</head>
+
+	<body>
+		<div>
+			<ul class="layui-nav">
+				<div id="title">
+					<i id="icon-top" class="layui-icon layui-icon-upload"></i>
+					<p id="title-p" style="font-family:'新宋体';">学生作业上传系统</p>
+				</div>
+			</ul>
+		</div>
+
+		<br />
+
+		<div>
+			<form class="layui-form" action="UploadServlet" enctype="multipart/form-data" id="form" method="post">
+				<div>
+					<div id="form-table">
+						<div class="layui-form-item">
+							<label class="layui-form-label">学号</label>
+							<div class="layui-input-block">
+								<input id="input_name" type="text" name="number" required lay-verify="required" placeholder="请输入学号" autocomplete="off" class="layui-input">
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">类型</label>
+							<div class="layui-input-block">
+								<input id="input_name" type="text" name="type" required lay-verify="required" placeholder="请输入文件类型" autocomplete="off" class="layui-input">
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">专业班级</label>
+							<div class="layui-input-block">
+								<input id="input_name" type="text" name="sclass" required lay-verify="required" placeholder="请输入班级：如软件1601" autocomplete="off" class="layui-input">
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">姓名</label>
+							<div class="layui-input-block">
+								<input id="input_name" type="text" name="sname" required lay-verify="required" placeholder="请输入姓名" autocomplete="off" class="layui-input">
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">项目名称</label>
+							<div class="layui-input-block">
+								<input id="input_name" type="text" name="wname" required lay-verify="required" placeholder="请输入项目名称 " autocomplete="off" class="layui-input">
+							</div>
+						</div>
+						<div class="layui-form-item layui-form-text">
+							<label class="layui-form-label">项目简介</label>
+							<div class="layui-input-block">
+								<textarea id="inputarea" placeholder="如项目功能，所用技术等" name="introduce" class="layui-textarea"></textarea>
+							</div>
+						</div>
+					</div>
+
+					<div id="form-upload">
+
+						<div class="layui-upload">
+							<button type="button" class="layui-btn" name="picture" id="test1">上传图片</button>
+							<div class="layui-upload-list">
+								<img class="layui-upload-img" id="demo1">
+								<p id="demoText"></p>
+							</div>
+						</div>
+
+						<br />
+						<div class="layui-upload">
+							<button type="button" class="layui-btn layui-btn-normal" id="testList">选择文件</button>
+							<div class="layui-upload-list">
+								<table class="layui-table" style="width: 30%;">
+									<thead>
+										<tr>
+											<th>文件名</th>
+											<th>大小</th>
+											<th>状态</th>
+											<th>操作</th>
+										</tr>
+									</thead>
+									<tbody id="demoList"></tbody>
+								</table>
+							</div>
+							<!--<button type="button" class="layui-btn" id="testListAction">开始上传</button>-->
+						</div>
+					</div>
+				</div>
+
+				<hr class="layui-bg-gray">
+
+				<div class="layui-form-item" id="btn-operation">
+					<div class="layui-input-block">
+						<button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+						<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+	</body>
+
+</html>

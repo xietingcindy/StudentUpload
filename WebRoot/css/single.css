@@ -1,0 +1,31 @@
+#footer{
+	background-color: #f2f2f2;
+}
+#box{
+  width:430px;
+  height:430px;
+}
+
+#move{
+
+  position:absolute;
+  left:0px;
+  top:0px;
+  display:none;//先让他隐藏，用js使其显示
+}
+#bimg{
+  width:300px;
+  height:300px;
+  overflow:hidden;
+  position:absolute;
+  top:0px;
+  left:450px;
+  display:none;//先让他隐藏，用js使其显示
+}
+#bimg img{
+  width:800px;
+  height:800px;
+  position:absolute;
+  top:0px;
+  left:0px;
+}
