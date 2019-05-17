@@ -1,4 +1,4 @@
-//下载
+
 			
 
 
@@ -104,17 +104,21 @@
 									<p>
 										 <a class="btn"  href="javascript:void(0)" onclick="pass(${dataDoc.wid})"><i class="layui-icon layui-icon-edit">通过</i></a> 
 										 <a class="btn"  href="javascript:void(0)" onclick="deletework(${dataDoc.wid})"><i class="layui-icon layui-icon-delete">删除</i></a>
-										 <a class="btn"  href="${dataDoc.address}" download="${dataDoc.address}"><i class="layui-icon layui-icon-download-circle">下载</i></a> 
+										 <button class="btnd"><i class="layui-icon layui-icon-download-circle">下载</i></button>
 									</p>
 								</div>	
 							</div>
 						</div>
 		`;
-
+				
 			});
 			document.querySelector("#row").innerHTML = str;
 		
 		};
+
+
+
+
 
 	function getDataLeft(page) {
 			var page = page || 1;
